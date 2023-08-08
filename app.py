@@ -57,6 +57,7 @@ def download_videos(video_urls, quality, output_folder):
             else:
                 print(f"No available stream for video: {video.title}")
         except Exception as e:
+            print(f"Error occurred while downloading video: {video_url}")
             print(f"Error: {str(e)}")
 
     print("All videos downloaded successfully!")
