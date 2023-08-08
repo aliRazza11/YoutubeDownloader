@@ -64,6 +64,7 @@ def download_videos(video_urls, quality, output_folder):
 
 
 def choose_folder():
+    #print(choosing folder)
     global output_folder
     output_folder = filedialog.askdirectory()
     folder_path_label.config(text=output_folder)
