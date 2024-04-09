@@ -8,7 +8,7 @@ import os
 
 def get_playlist_videos(playlist_url):
     playlist_id = playlist_url.split("list=")[1]
-    api_key = "AIzaSyA4w27bFloeNXlhfs7K3JIbuhNa7xz1sqk"
+    api_key = ""
     video_urls = []
     url = f"https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId={playlist_id}&key={api_key}"
     response = requests.get(url)
